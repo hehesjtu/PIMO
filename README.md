@@ -1,8 +1,8 @@
-PIMO-IDE: Projection-Iterative-Methods-Based Single Image Detail Enhancement
+#PIMO-IDE: Projection-Iterative-Methods-Based Single Image Detail Enhancement
 
 This repository provides the official MATLAB implementation of our paper on **PIMO-based single image detail enhancement**.
 
-Project Introduction
+#Project Introduction
 
 This project presents an image detail enhancement framework based on a **Projection-Iterative-Methods-Based Optimizer (PIMO)**.  
 The method models local patch matching as a population-based optimization problem and combines multi-scale decomposition, gradient/texture feature constraints, and PIMO search operators to enhance image details while preserving structural consistency.
@@ -17,7 +17,7 @@ Compared with conventional greedy or purely filter-based strategies, the propose
 
 ---
 
-File Structure
+#File Structure
 
 ```text
 ├── DE_demo.m         # [Main Program] GUI / main entry for image detail enhancement
@@ -31,14 +31,14 @@ File Structure
 
 
 
-Requirements
+#Requirements
 
 MATLAB R2024a / R2024b recommended
 Image Processing Toolbox
 Parallel Computing Toolbox (optional but recommended for the `parfor` version)
 
 
-Quick Start
+#Quick Start
 
 Step 1: Prepare the environment
 Make sure MATLAB is installed correctly and the required toolboxes are available.
@@ -46,11 +46,11 @@ Make sure MATLAB is installed correctly and the required toolboxes are available
 Step 2: Prepare the files
 Place the following files in the same working directory:
 `DE_demo.m`
-`PIMO_parfor.m`
-`grad.m`
-`texture.m`
+`PIMO_parfor.p`
+`grad.p`
+`texture.p`
 
-Create the following folders if they do not already exist:
+#Create the following folders if they do not already exist:
 `data`
 `results`
 
@@ -67,7 +67,7 @@ DE_demo
 or click the Run button in the MATLAB Editor.
 
 
-Notes
+#Notes
 
 1. First-run speed
 If the parallel version is used, MATLAB may start a parallel pool (`parpool`) during the first run.  
@@ -88,7 +88,7 @@ Please keep the helper functions (`grad.m`, `texture.m`) and the main algorithm 
 
 
 
-Output Results
+#Output Results
 
 The enhanced results will be saved to the `results` folder.
 
@@ -99,7 +99,7 @@ and evaluation indicators such as PSNR / SSIM .
 
 
 
-Method Overview
+#Method Overview
 
 The current implementation mainly includes the following stages:
 
