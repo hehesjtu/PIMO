@@ -84,7 +84,7 @@ The actual speedup depends on:
 -image size,
 -and the selected parameter settings.
  4. File naming
-Please keep the helper functions (`grad.m`, `texture.m`) and the main algorithm file in the same directory as `DE_demo.m`.
+Please keep the helper functions (`grad.p`, `texture.p`) and the main algorithm file in the same directory as `DE_demo.m`.
 
 
 
